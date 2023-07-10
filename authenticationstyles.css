@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.background{
+    position: absolute;
+    width:100%;
+    height:700px ;
+    background-color: aliceblue;
+
+}
+.background img{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    z-index: -3;
+}
+.form-container{
+    margin-top: 2rem;
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    position: relative;
+    margin:7% auto ;
+    padding:10px;
+    box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    
+}
+.switchers{
+    position: relative;
+    width: 240px;
+    margin: 35px auto;
+    border-radius: 30px;
+}
+.changers{
+    padding: 10px 30px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#changer-clrs{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 51%;
+    border-radius: 30px;
+    transition: .7s;
+    background: linear-gradient(to right,rgb(144, 223, 247), rgb(47, 201, 136));
+}
+.socials{
+    text-align: center;
+    margin: 30px auto;
+}
+.socials img{
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin:0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+}
+.inputs{
+    top: 1rem;
+    position: relative;
+    width: 290px;
+    transition: .7s;
+    margin-left: 2.2rem;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    outline: none;
+    background: transparent;
+    border-left:0;
+    border-right:0 ;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+}
+.submit-form{
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(to right,rgb(144, 223, 247), rgb(47, 201, 136));
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 13px;
+    bottom: 1.2rem;
+}
+#sign_in{
+    left:10px;
+}
+#sign-up{
+    left: 410px;
+    top:12.1rem;
+    position: absolute;
+}

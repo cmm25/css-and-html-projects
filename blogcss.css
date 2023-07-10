@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x:hidden ;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+#display{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0.5rem;
+    width: 100%;
+    min-height: 50vh;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.video_bg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    min-width:100%;
+    min-height: 100%;
+    object-fit: cover;
+
+}
+#display> h3 ,p{
+    z-index: 1;
+}
+#display>h3{
+    color: white;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+    font-size: 25px;
+    background:transparent;
+}
+#display>p{
+    color: white;
+    margin-left: 3rem;
+    background:transparent
+}
+#guide ul{
+    width: 100%;
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#guide ul li{
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+
+}
+#guide ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    
+}
+#guide ul li a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+@media(max-width:600px){
+    #guide ul li{
+        font-size: 15px;
+    }
+}
+#content h4{
+    font-size: 30px;
+    text-align: left;
+    color: rgb(19, 75, 19);
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+.scrollable-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+  
+.scrollable-cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.card {
+    flex: 0 0 calc(50% - 1rem);
+    scroll-snap-align: start;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+#pay{
+    font-size: 20px;
+    text-align: center;
+    color:black;
+    text-transform: capitalize;
+    padding: 20px;
+}
+.ups{
+    display: grid;
+    width: 100%;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(22rem, 6fr));
+    align-items: start;
+    margin-bottom: 10rem;
+}
+.block{
+    width: 1/3;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    cursor: pointer;
+    grid-template-columns: repeat(1,1fr);
+    box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.block:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.5);
+
+}
+.block p {
+    background-color: transparent;
+    line-height: 1.3;
+    margin-bottom: 1.7rem;
+}
+.images{
+    display: block;
+    height:12rem;
+    width: 100%;
+    object-fit: cover;
+}
+.block-content{
+    padding: 2rem;
+}
+.block-content>h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.card-btn{
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: pink;
+    border-radius: 15px;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ;
+}
+.card-btn a{
+    text-decoration: none;
+    color:black;
+    background: inherit;
+}
+.card-btn span{
+    transition: 0.2s ;
+    margin-left: 2px;
+    background-color: transparent;
+}
+.card-btn:hover,
+.card-btn:active{
+    background-color: hotpink;
+}
+.card-btn:hover span,
+.card-btn:active span{
+    margin-left: 4px;
+}
+#spacer{
+    width: 100%;
+    height:5rem;
+    background: transparent;
+}
+.payments_buttons{
+    margin-top: 2rem;
+    display: flex;
+    
+}
+.paypal{
+    margin-right: 70px;
+
+}
+#search-area{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#search-section{
+    position: inherit;
+    margin-top: 2.2rem;
+
+}
+
+#search-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+#location-input {
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+  
+#search-button {
+    margin-right: 10px;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: pink;
+    border-radius: 15px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+  
+#search-button:hover {
+    background-color: lightpink;
+}
+  
+#results {
+    text-align: center;
+}
+  
+.event {
+    margin-bottom: 10px;
+}
+.exit-btn {
+    /* Add the same properties as the card button */
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 6px;
+    background-color: lightpink;
+    color:black;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    margin: 1rem;
+}
+  
+.exit-btn:hover {
+    background-color: hotpink;
+}
+.mpesa-btn{
+    display: inline;
+    margin-right: 10px;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: lightgreen;
+    border-radius: 15px;
+    width: fit-content;
+    border: none;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: 0.2s ;
+
+}
+.mpesa-btn:hover{
+    background-color: green;
+}
+.event {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card h2,
+  .card p {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .exit-btn {
+    margin-top: 10px;
+  }
+    
+  /*
+.payments_buttons button{
+    display: inline;
+    margin-right: 10px;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: pink;
+    border-radius: 15px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ;
+}
+.payments_buttons button:hover,
+.payments_buttons button:active{
+    background-color: hotpink;
+}*/
